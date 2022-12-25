@@ -35,15 +35,13 @@ p.a {
 /* =============commom css end======== */
 
 /* ============navbar css start========== */
-nav.navbar.navbar-expand-lg {
+.navbar.navbar-expand-lg {
     background: #fff;
     padding: 0px;
 }
-
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
     padding-top: 20px;
 }
-
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link {
     padding: 35px 36px;
     font-weight: 400;
@@ -54,7 +52,33 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link {
     color: #2A3268;
     position: relative;
 }
-
+a.nav-link.active {
+    margin-top: 14px;
+}
+#btn-r {
+    border: none;
+    border-radius: 10px;
+}
+.admin button {
+    border: none;
+    box-shadow: none;
+}
+.admin button:focus {
+    border: none;
+    box-shadow: none;
+}
+.search-icon input:focus{
+    box-shadow: none;
+}
+.nav-icon button {
+    border: none;
+    box-shadow: none;
+    background-color: #fff;
+}
+.nav-icon button:focus {
+    border: none;
+    box-shadow: none;
+}
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::after {
     content: "";
     width: 30PX;
@@ -66,7 +90,6 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::after {
     border-radius: 50%;
     box-shadow: 15px 15px 0px #EDF2F8;
 }
-
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::before {
     content: "";
     width: 30PX;
@@ -78,18 +101,15 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::before {
     border-radius: 50%;
     box-shadow: -15px 15px 0px #EDF2F8;
 }
-
 .nav-icon {
     width: 150px;
     display: flex;
     justify-content: space-evenly;
     font-size: 25px;
 }
-
 .nav-icon i.fa-regular.fa-bell {
     color: #C1C9DE;
 }
-
 .admin-user {
     display: flex;
     align-items: center;
@@ -97,19 +117,33 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::before {
     padding: 5px 10px;
     border-radius: 15px;
 }
-
+.admin-user img {
+    background: #ffff;
+    border-radius: 50px;
+    margin-right: 10px;
+}
 a.nav-link.active {
     background: #EDF2F8;
     border-radius: 10px 10px 0px 0px;
 }
-
+.search-icon {
+    position: relative;
+}
 .search-icon a {
     color: #C1C9DE;
-    position: relative;
-    right: 37px;
-    top: 8px;
+    position: absolute;
+    right: 7px;
+    top: 9px;
+    font-size: 15px;
 }
-
+.btn,i{
+    border: none;
+    box-shadow: none;
+}
+.btn,i:focus{
+    border: none;
+    box-shadow: none;
+}
 /* ============navbar css end========== */
 
 
@@ -136,7 +170,6 @@ a.nav-link.active {
     line-height: 40px;
     letter-spacing: -1px;
     color: #333C7A;
-    margin-bottom: 30px;
 }
 
 .overview-details {
@@ -144,44 +177,55 @@ a.nav-link.active {
     background: #ffff;
     border-radius: 10px;
     transition: all linear 0.4s;
+    align-items:center;
+    gap: 20px;
 }
 
-.overview-details img {
-    margin-right: 15px;
+.overview-details .overview-icon {
     background: #147AFF;
-    padding: 15px;
     border-radius: 15px;
     transition: all linear 0.4s;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.overview-details .overview-icon svg {
+    fill: #fff;
+    transition: all linear 0.4s;
+}
+
+.overview-details:hover .overview-icon {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* .overview-details:hover .overview-icon svg {
+    fill: #147AFF;
+} */
 
 .overview-details:hover {
     background: #147AFF;
 }
 
-.overview-details:hover img {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
+.overview-details .overview-item p {
+    margin-bottom: 0;
 }
 
-.overview-details:hover h3 {
-    color: #FFFFFF;
+.overview-details:hover .overview-item p {
+    color: #fff !important;
+}
+.overview-details:hover .overview-item h3 {
+    color: #fff !important;
 }
 
-.overview-details:hover a {
-    color: #ffff;
+.overview-item h3{
+    color:  #333C7A !important;
 }
-
-.overview-item a {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 40px;
-    letter-spacing: -1px;
-    color: #74778E;
+.overview-item p{
+    color: #74778E !important;
 }
-
-
-
-
 /* =======================overview section css end===================== */
 
 
@@ -190,8 +234,17 @@ a.nav-link.active {
     padding: 50px 50px;
     background: #ffff;
     border-radius: 10px;
+    display: flex;
 }
-
+.counter{
+    width: 13%;
+}
+.setup-text{
+    width: 47%;
+}
+.counter-xcloud{
+    width: 20%;
+}
 .setup-text h2 {
     font-weight: 500;
     font-size: 30px;
@@ -204,7 +257,7 @@ a.nav-link.active {
 .setup-text p {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 26px;
     color: #74778E;
     padding-right: 110px;
@@ -240,6 +293,7 @@ a.nav-link.active {
     line-height: 20px;
     letter-spacing: -0.5px;
     color: #74778E;
+    margin-right: 10px;
 }
 
 .php-tag span {
@@ -256,18 +310,24 @@ a.nav-link.active {
 
 
 .setup-btn button {
-    padding: 32px 37px;
+    padding: 25px 33px;
     text-shadow: 0px 2px 2px rgba(0, 40, 132, 0.3);
     background: #000;
     background: #32BA7C;
     border-radius: 15px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
     color: #FFFFFF;
     border: none;
-    margin-top: 10px;
+}
+
+.setup-btn {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .progress {
@@ -378,16 +438,22 @@ a.nav-link.active {
     padding-top: 64px;
     padding-bottom: 44px;
 }
-.footer-box{
+
+.dots {
+    margin: 0px;
+}
+.footer-box {
     padding: 30px;
     background: #ffff;
     border-radius: 10px;
     transition: all linear 0.4s;
 }
-.footer-box:hover{
+
+.footer-box:hover {
     background: #147AFF;
 }
-.footer-box:hover .php-tag p{
+
+.footer-box:hover .php-tag p {
     color: #ffff;
 }
 
@@ -401,7 +467,8 @@ a.nav-link.active {
     margin-right: 20px;
     transition: all linear 0.4s;
 }
-.footer-box:hover .footer-text h5{
+
+.footer-box:hover .footer-text h5 {
     color: #ffff;
 }
 
@@ -423,10 +490,12 @@ a.nav-link.active {
 }
 
 .footer-icon i {
+    margin-top: 5px;
     color: #147AFF;
     padding-right: 10px;
     transition: all linear 0.4s;
 }
+
 .footer-box:hover .footer-icon i {
     color: #ffff;
 }
@@ -439,8 +508,18 @@ a.nav-link.active {
     color: #74778E;
     transition: all linear 0.4s;
 }
-.footer-box:hover .footer-icon p{
+
+.footer-box:hover .footer-icon p {
     color: #ffff;
+}
+.footer-btn {
+    border: 1px solid #ddd;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin: auto;
+}
+.footer-box:hover .footer-btn{
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-btn button {
@@ -448,42 +527,53 @@ a.nav-link.active {
     font-size: 15px;
     line-height: 12px;
     color: #2A3268;
-    padding: 15px 14px;
+    padding: 15px 15px;
     border: none;
     background: #ffff;
-    margin-right: -5px;
-    box-shadow: 0 1px 2px gray;
     transition: all linear 0.4s;
+    box-shadow: none;
 }
-.footer-box:hover .footer-btn button{
- background: rgba(255, 255, 255, 0.1);
-border-radius: 5px;
-color: #ffff;
-}
-.footer-box:hover .footer-btn button i{
+
+
+.footer-box:hover .footer-btn button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
     color: #ffff;
 }
 
-.footer-btn i{
+.footer-box:hover .footer-btn button i {
+    color: #ffff;
+}
+
+.footer-btn i {
     color: #147AFF;
     font-size: 20px;
 }
+
 .footer-btn button:last-child {
-    padding: 19px 5px;
+    padding: 19px 6px;
     position: relative;
-    top: -3px;
+    top: -2px;
 }
 
-
+#btn {
+    border-right: 1px solid #ddd;
+    display: block;
+}
+.footer-box:hover #btn {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 
 /* =======================footer section css end===================== */
 
-<!-- /* =======================footer-buttom section  start=====================*/ -->
-#footer-buttom{
+
+/* =======================footer-buttom section  start=====================*/
+#footer-buttom {
     margin-bottom: 100px;
 }
-.buttom-btn button{
+
+.buttom-btn button {
     border: none;
     padding: 10px 18px;
     background: #ffff;
@@ -491,9 +581,11 @@ color: #ffff;
     transition: all linear 0.4s;
     text-align: center;
 }
-.buttom-btn button:hover{
+
+.buttom-btn button:hover {
     background: #147AFF;
     color: #ffff;
 }
 
-<!-- /* =======================footer-buttom section  end=====================*/ -->
+
+/* =======================footer-buttom section  end=====================*/

@@ -1,0 +1,183 @@
+@media screen and (min-width: 320px) and (max-width: 574px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-link.active::before {
+        display: none;
+    }
+
+    .nav-link.active::after {
+        display: none;
+    }
+
+    .fa-solid.fa-magnifying-glass {
+        margin-right: 25px;
+    }
+
+    .form-control.me-2 {
+        width: 80%;
+        margin: auto;
+        margin-left: 30px;
+    }
+
+    .nav-icon {
+        margin: auto;
+    }
+
+    #btn-r {
+        border: none;
+        border-radius: 10px;
+        margin-left: 68px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        box-shadow: none;
+    }
+
+    .navbar-toggler:focus {
+        border: none;
+        box-shadow: none;
+    }
+
+    a.nav-link.active {
+        background: none;
+        border-radius: none;
+    }
+
+    .admin {
+        text-align: center;
+        margin-bottom: 22px;
+        margin-left: 72px;
+        margin-top: 20px;
+    }
+
+    .overview-text button {
+        position: relative;
+        top: 14px;
+        right: 50%;
+        margin-top: 100px;
+        margin-bottom: 60px;
+        padding: 12px 18px !important;
+        font-size: 13px;
+        transform: translateX(50%);
+    }
+
+    .overview-text h2 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+    }
+
+    .setup-btn {
+        margin-left: 20px;
+    }
+
+    #setup {
+        margin: 0px 10px;
+    }
+
+    .overview-details.d-flex {
+        margin-bottom: 20px;
+    }
+
+    .overview-details {
+        margin-bottom: 25px;
+    }
+
+    .overview-details {
+        margin-bottom: 0px;
+    }
+
+    .counter {
+        width: 100%;
+    }
+
+    .setup-text {
+        width: 100%;
+    }
+
+    .counter-xcloud {
+        width: 100%;
+    }
+
+    .www {
+        text-align: center;
+    }
+
+    .www h2 {
+        padding-right: 0px;
+    }
+
+    .php-tag {
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .setup-btn button {
+        padding: 16px 21px;
+        font-size: 15px;
+        margin: auto;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .setup-btn {
+        width: 100%;
+    }
+
+    .progress.blue {
+        margin-left: 31px;
+        margin-bottom: 30px;
+    }
+
+    .setup-counter {
+        display: block;
+    }
+
+    .setup-text h2 {
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .setup-text p {
+        font-size: 15px;
+        line-height: 24px;
+        padding-right: 0px;
+        text-align: center;
+    }
+
+
+    #footer {
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-box {
+        margin-top: 20px;
+
+    }
+
+    .buttom-btn button {
+        margin-right: 9px;
+        margin-bottom: 10px;
+    }
+
+    .fa-solid,
+    .fas {
+        margin-right: 0px;
+    }
+
+    .buttom-btn {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
