@@ -81,23 +81,23 @@ a.nav-link.active {
 }
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::after {
     content: "";
-    width: 30PX;
-    height: 30px;
+    width: 40PX;
+    height: 40px;
     background: #fff;
     position: absolute;
     bottom: 0;
-    left: -30px;
+    left: -40px;
     border-radius: 50%;
     box-shadow: 15px 15px 0px #EDF2F8;
 }
 ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::before {
     content: "";
-    width: 30PX;
-    height: 30px;
+    width: 40PX;
+    height: 40px;
     background: #fff;
     position: absolute;
     bottom: 0;
-    right: -30px;
+    right: -40px;
     border-radius: 50%;
     box-shadow: -15px 15px 0px #EDF2F8;
 }
@@ -114,8 +114,15 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::before {
     display: flex;
     align-items: center;
     background: #EDF2F8;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 15px;
+}
+.down{
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 3px;
+    background: #fff;
+    margin-left: 8px;
 }
 .admin-user img {
     background: #ffff;
@@ -124,10 +131,21 @@ ul.navbar-nav.me-auto.mb-2.mb-lg-0 .nav-item .nav-link.active::before {
 }
 a.nav-link.active {
     background: #EDF2F8;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
+}
+.form-control {
+    padding: 14px 10px;
 }
 .search-icon {
     position: relative;
+}
+.search-i{
+    font-size: 19px;
+    margin-top: 8px;
+    color:#C1C9DE;
+}
+.bell{
+    font-size: 19px;
 }
 .search-icon a {
     color: #C1C9DE;
@@ -171,7 +189,9 @@ a.nav-link.active {
     letter-spacing: -1px;
     color: #333C7A;
 }
-
+.btn-add-site{
+    padding: 15px 10px;
+}
 .overview-details {
     padding: 30px;
     background: #ffff;
@@ -558,13 +578,35 @@ a.nav-link.active {
 
 #btn {
     border-right: 1px solid #ddd;
-    display: block;
+    display: flex;
 }
 .footer-box:hover #btn {
     border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
-
-
+a.dropdown-item:hover {
+    background: #32BA7C;
+    color: #fff;
+}
+/* .dropdown-item.check:hover {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+} */
+.dropdownn.check:hover{
+    color: red;
+}
+.check {
+    font-size: 13px !important;
+    padding: 3px;
+    border-radius: 50px;
+    background: #fff;
+    color: #32BA7C !important;
+    margin-left: 170px;
+    margin-top: 6px;
+}
+.dropdownn{
+    width: 200px;
+}
 /* =======================footer section css end===================== */
 
 
